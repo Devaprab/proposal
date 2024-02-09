@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marriage Proposal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="gift-box" onclick="openBox()">
+            <div class="ribbon"></div>
+            <div class="lid"></div>
+            <div class="base"></div>
+        </div>
+        <div class="message hidden" id="proposalMessage">
+            <h1>Will You Marry Me?</h1>
+            <p>I love you more than anything in this world. Will you spend the rest of your life with me?</p>
+        </div>
+    </div>
+
+    <script>
+        function openBox() {
+            document.getElementById('proposalMessage').classList.toggle('hidden');
+        }
+    </script>
+</body>
+</html>
